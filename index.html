@@ -3,299 +3,474 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hazzys</title>
+    <meta name="viewport" content="width=1400">
+    <title>re:float</title>
     <link rel="stylesheet" href="./css/style.css">
-    <!-- 내가 꾸민 css -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/Company Logo - 복사본.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./js/tap.js"></script>
 </head>
 
 <body>
-    <div id="header"><!-- header_S -->
+    <div id="wrap_wrap">
+        <div id="header_wrap">
+            <div class="header">
+                <ul class="gnb">
+                    <li class="logo-area">
+                        <a href="./index.html"><img class="logo" src="./img/Company Logo.png" alt="로고"></a>
+                    </li>
 
-        <!-- 너비1200/높이120/가운데 -->
-        <h1 class="logo">
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="logo">
-            </a>
-        </h1>
-        <ul class="util">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">store</a></li>
-            <li><a href="#"><img src="./images/icon2.png" alt="icon"></a></li>
-        </ul>
-    </div><!-- header_E-->
-    <div id="gnb_wrap"> <!-- gnb_wrap_S -->
+                    <li class="menu-item">
+                        <a href="./sub/sub1.html">
+                            <p>THE TIDE</p>
+                        </a>
 
-        <!-- 너비1200/높이60/가운데 -->
-        <ul class="gnb">
-            <li>
-                <a href="#">BRAND</a>
-                <div class="sub_wrap bg_color">
-                    <!-- 전체너비를 다 사용! -->
-                    <div class="sub_inner">
-                        <!-- 가운데너비1200/ -->
-                        <div class="sub">
-                            <h3>BRAND</h3>
-                            <ul>
-                                <li><a href="#">CAMPAIGN</a></li>
-                                <li><a href="#">HAZZYS ICONIC ITEM</a></li>
-                                <li><a href="#">SPECIAL EDITION</a></li>
-                            </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">
+                            <p>탐색</p>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-inner">
+                                <div class="menu-col">
+                                    <h3>컬렉션</h3>
+                                    <div class="item"><img src="./img/Vector.png" alt="아이콘" class="menu-icon">
+                                        <div>
+                                            <h4><a href="./sub/sub2.html">큐레이티드 샵</a></h4>
+                                            <p>제품을 통해 바다를 살린다</p>
+                                        </div>
+                                    </div>
+                                    <div class="item"><img src="./img/Vector.png" alt="아이콘" class="menu-icon">
+                                        <div>
+                                            <h4><a href="./sub/sub3.html">갤러리 앤 아카이브</a></h4>
+                                            <p>각 제품의 출처와 이야기</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-col">
+                                    <h3>정보</h3>
+                                    <div class="item"><img src="./img/Vector.png" alt="아이콘" class="menu-icon">
+                                        <div>
+                                            <h4><a href="./sub/sub4.html">서포트</a></h4>
+                                            <p>자주 묻는 질문과 답변</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메인동영상 -->
+        <div id="main_wrap">
+            <div class="video-container">
+                <video src="./video/홈페이지 동영상.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+
+        <!-- 메인동영상 끝 -->
+
+        <!-- 텍스트 흘러가는 부분 -->
+        <div id="marquee_wrap">
+            <div class="marquee-content">
+                <!-- 첫 번째 세트 -->
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <!-- 두 번째 세트 (연속성을 위해 복사) -->
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+                <span class="text-item">RE:FLOATING..</span>
+            </div>
+        </div>
+
+        <!-- 메인 2 에러탭 시작 -->
+        <div id="main2_wrap">
+            <div class="main2">
+                <img class="main2_img1" src="./img/경고창1.png" alt="">
+                <img class="main2_img2" src="./img/경고창10.png" alt="">
+                <img class="main2_img3" src="./img/경고창2.png" alt="">
+                <img class="main2_img4" src="./img/경고창3.png" alt="">
+                <img class="main2_img5" src="./img/경고창4.png" alt="">
+                <img class="main2_img6" src="./img/경고창5.png" alt="">
+                <img class="main2_img7" src="./img/경고창6.png" alt="">
+                <img class="main2_img8" src="./img/경고창7.png" alt="">
+                <img class="main2_img9" src="./img/경고창8.png" alt="">
+                <img class="main2_img10" src="./img/경고창11.png" alt="">
+                <img class="main2_img11" src="./img/경고창12.png" alt="">
+            </div>
+        </div>
+        <!-- 메인2에러탭끝 -->
+        <div id="main3_wrap">
+            <div class="main3">
+                <video src="./video/바다오염.mp4" muted autoplay loop playsinline></video>
+            </div>
+        </div>
+
+        <div id="main4_wrap">
+            <div class="main4_content">
+                <div class="main4_left">
+                    <h5 class="main4_h5">영향</h5>
+                    <h4 class="main4_h4">우리가 함께 만들어낸 변화</h4>
+                </div>
+
+                <div class="main4_right">
+                    <p class="main4_p">3,000톤의 쓰레기가 매일 바다로 버려지고 있습니다.<br>당신의 선택으로 바다를 구할 수 있습니다</p>
+
+                    <div class="counter_box">
+                        <div class="counter_item">
+                            <p class="counter1">12,814</p>
+                            <p class="counter_p1">톤의 해양폐기물 수거</p>
+                        </div>
+                        <div class="counter_item">
+                            <p class="counter2">3,486</p>
+                            <p class="counter_p2">개의 제품으로 재탄생</p>
                         </div>
                     </div>
                 </div>
-            </li>
-            <li>
-                <a href="#">MEN</a>
-                <div class="sub_wrap">
-                    <!-- 전체너비를 다 사용! -->
-                    <div class="sub_inner">
-                        <!-- 가운데너비1200/ -->
-                        <div class="sub">
-                            <h3>MEN</h3>
-                            <ul>
-                                <li><a href="#">CAMPAIGN</a></li>
-                                <li><a href="#">HAZZYS ICONIC ITEM</a></li>
-                                <li><a href="#">SPECIAL EDITION</a></li>
-                            </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+        <script>
+            jQuery(document).ready(function ($) {
+                $('.counter1').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $('.counter2').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            });
+        </script>
+        <!-- 카운터 스크립트 끝 -->
+
+        <!-- 메인 5 시작 -->
+        <div id="main5_wrap">
+            <div class="main5">
+                <img src="./img/지도 1.png" alt="지도">
+                <!-- 남극해 -->
+                <div class="hotspot" style="top: 460px; left: 590px;">
+                    <div class="number-popup">-6℃</div>
+                </div>
+                <!-- 인도양 -->
+                <div class="hotspot" style="top: 370px; left: 800px;">
+                    <div class="number-popup">25℃</div>
+                </div>
+                <!-- 대서양 -->
+                <div class="hotspot" style="top: 220px; left: 490px;">
+                    <div class="number-popup">13.5℃</div>
+                </div>
+                <!-- 태평양 -->
+                <div class="hotspot" style="top: 300px; left: 200px;">
+                    <div class="number-popup">15℃</div>
+                </div>
+                <!-- 북극해 -->
+                <div class="hotspot" style="top: 70px; left: 1050px;">
+                    <div class="number-popup">3℃</div>
+                </div>
+            </div>
+        </div>
+        <!-- 메인5끝 -->
+
+        <!-- main6 시작 -->
+
+        <div class="tab-wrap">
+            <div class="tab-container">
+                <div class="header-text">
+                    <p class="label">특징</p>
+                    <h1>세 가지 가치</h1>
+                    <p class="sub-desc">RE:FLOAT는 단순한 제품이 아닙니다. 이것은 바다를 위한 선택입니다.</p>
+                    <button class="wave-btn">아워 웨이브 ></button>
+                </div>
+
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="openTab(event, 'tab1')">친환경</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab2')">세련된 디자인</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab3')">사회적 영향</button>
+                </div>
+
+                <div id="tab1" class="tab-content" style="display: flex;">
+                    <div class="text-box-tap">
+                        <p class="subtitle">지속가능성</p>
+                        <h2>100% 재활용 해양 폐기물로 만들어집니다</h2>
+                        <p class="desc">각 제품은 버려진 어망, 플라스틱 부표, 해양 쓰레기로부터 탄생합니다.</p>
+                    </div>
+                    <div class="img-box-tap"><img src="./img/hand.png" alt="친환경"></div>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <div class="text-box-tap">
+                        <p class="subtitle">환경과 예술의 결합</p>
+                        <h2>바다를 위한 디자인</h2>
+                        <p class="desc">우리는 버려진 해양 폐기물들에게 이름과 스토리를 부여해 새 생명을 부여합니다.</p>
+                    </div>
+                    <div class="img-box-tap"><img src="./img/poster.png" alt="디자인"></div>
+                </div>
+
+                <div id="tab3" class="tab-content">
+                    <div class="text-box-tap">
+                        <p class="subtitle">공생하다</p>
+                        <h2>지속 가능한 내일</h2>
+                        <p class="desc">버려진 것에 새로운 생명을 불어넣어, 우리 모두가 바다와 공존하는 지속 가능한 내일을 만듭니다.</p>
+                    </div>
+                    <div class="img-box-tap"><img src="./img/trash.png" alt="사회적영향"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main7 시작 -->
+
+        <div class="product-wrap">
+
+            <div class="product-section">
+                <div class="product-header">
+                    <h2>PRODUCT</h2>
+                    <p>바다에서 흘러온 이야기들</p>
+                </div>
+
+                <div class="product-list">
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="./img/product1.png" alt="RE:FLOAT">
                         </div>
-                        <div class="sub_img">
-                            <a href="#">
-                                <img src="./images/hazzys_sub01.jpg" alt="sub">
+                        <div class="info-box">
+                            <h3><a href="$">RE:FLOAT</a></h3>
+                            <p class="desc">해양쓰레기를 활용하여 만든 오브젝트</p>
+                            <p class="reviews">★★★★★ 81 REVIEWS</p>
+                            <p class="price">$53.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card staggered">
+                        <div class="img-box">
+                            <img src="./img/product2.png" alt="T-SHIRT">
+                        </div>
+                        <div class="info-box">
+                            <h3><a href="#">T-SHIRT</a></h3>
+                            <p class="desc">해양유리를 재조합해낸 리플로트만의 티셔츠</p>
+                            <p class="reviews">★★★★★ 59 REVIEWS</p>
+                            <p class="price">$23.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="./img/product3.png" alt="DRIFT-DROP CHARM">
+                        </div>
+                        <div class="info-box">
+                            <h3> <a href="#">DRIFT-DROP CHARM</a></h3>
+                            <p class="desc">폐플라스틱을 재활용하여 만든 키링</p>
+                            <p class="reviews">★★★★★ 79 REVIEWS</p>
+                            <p class="price">$28.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="./img/product4.png" alt="ID-CARD">
+                        </div>
+                        <div class="info-box">
+                            <h3><a href="#">ID-CARD</a></h3>
+                            <p class="desc">폐플라스틱을 재활용하여 만든 리플로트만의 아이디카드</p>
+                            <p class="reviews">★★★★★ 51 REVIEWS</p>
+                            <p class="price">$18.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="./img/product5.png" alt="RE:FLOAT">
+                        </div>
+                        <div class="info-box">
+                            <h3><a href="#">RE:FLOAT</a></h3>
+                            <p class="desc">폐섬유를 재조합하여 만든 리무버블 스티커</p>
+                            <p class="reviews">★★★★★ 39 REVIEWS</p>
+                            <p class="price">$13.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <div class="store-wrap">
+            <div class="store-container">
+
+                <div class="info-area">
+                    <img src="./img/logo_white.png" alt="re:float" class="main-logo">
+
+                    <h2 class="title">BLUE ROOM</h2>
+                    <div class="details">
+                        <p>OPEN: 10:00<br>CLOSE: 19:00</p>
+                        <p class="address">오시는 길<br>부산 광역시 진구 24-14 리플로트 스토어</p>
+                    </div>
+                </div>
+
+                <div class="slider-area">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/매장사진.png" alt="매장사진 1"></div>
+                            <div class="swiper-slide"><img src="./img/매장사진2.png" alt="매장사진 2"></div>
+                            <div class="swiper-slide"><img src="./img/매장사진3.png" alt="매장사진 3"></div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <div class="nav-buttons">
+                            <div class="swiper-button-prev-custom">←</div>
+                            <div class="swiper-button-next-custom">→</div>
+                        </div>
+                        <div class="swiper-pagination-custom"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                console.log("💡 스와이퍼 로딩 테스트 시작...");
+
+                try {
+                    const swiper = new Swiper('.mySwiper', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 20,
+
+                        // 🚨 범인일 확률 99% : loop를 일단 끄고 테스트해보세요!
+                        loop: false,
+
+                        navigation: {
+                            nextEl: '.swiper-button-next-custom',
+                            prevEl: '.swiper-button-prev-custom',
+                        },
+                        pagination: {
+                            el: '.swiper-pagination-custom',
+                            clickable: true,
+                        },
+                    });
+                    console.log("✅ 스와이퍼 세팅 완료! 화면에서 넘겨보세요.");
+                } catch (e) {
+                    console.error("❌ 스와이퍼 에러 발생: ", e);
+                }
+            });
+        </script>
+        <div id="main8_wrap">
+            <div class="main8_1">
+                <h1 class="main8_h1">지금 시작하세요</h1>
+                <p class="main8_p">당신의 공간을 변화시킬 준비가 되었나요? 한정판 컬렉션을 지금 만나보세요</p>
+                <a href="#" class="main8_a">쇼핑하기</a>
+            </div>
+            <div class="main8_2">
+                <img id="slider-img" src="./img/인테리어1.png" alt="">
+                <script>
+                    // 1. 이미지 파일 경로들을 배열에 담습니다.
+                    const images = [
+                        "./img/인테리어1.png",
+                        "./img/인테리어2.png",
+                        "./img/인테리어3.png"
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById('slider-img');
+
+                    // 2. 3초마다 이미지를 변경하는 함수
+                    function changeImage() {
+                        currentIndex++;
+                        if (currentIndex >= images.length) {
+                            currentIndex = 0; // 마지막 이미지 다음은 다시 첫 번째로
+                        }
+                        imgElement.src = images[currentIndex];
+                    }
+
+                    // 3초(3000ms) 간격으로 함수 실행
+                    setInterval(changeImage, 5000);
+                </script>
+            </div>
+        </div>
+        <div class="footer-wrap">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-left">
+                        <div class="footer-left">
+                            <!-- 텍스트 대신 이미지 태그 사용 -->
+                            <a href="/" class="logo-link">
+                                <img src="./img/logo_white.png" alt="RE:FLOAT" class="logo-img">
                             </a>
+                            <p class="desc">받은 편지함에서 새로운 소식을 먼저 만나보세요.</p>
+                            <!-- ... 이하 동일 ... -->
                         </div>
-                        <div class="sub_img">
-                            <a href="#">
-                                <img src="./images/hazzys_sub02.jpg" alt="sub">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li><a href="#">WOMEN</a></li>
-            <li><a href="#">ACC</a></li>
-            <li><a href="#">GOLF</a></li>
-            <li><a href="#">BEAUTY</a></li>
-        </ul>
-    </div> <!-- gnb_wrap_E -->
-    <div id="banner1"><!-- banner1_S -->
-
-        <!-- 높이628 -->
-        <h1 class="b1_title">
-            ABOUT HAZZYS
-        </h1>
-        <h2 class="slogan">
-            British Style, For your Urban Life
-        </h2>
-    </div><!-- banner1_E -->
-    <div id="container1"><!--  container1_S-->
-
-        <!-- 너비1200/가운데/높이3220 -->
-        <h2 class="c_title">BRAND CONCEPT</h2>
-        <div class="section section1">
-            <div class="l_box">
-                <!-- 너비49% -->
-                <div class="img_box re_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-                    <div class="p1">
-                        <img src="./images/img_brand_about_1.jpg" alt="about">
-                    </div>
-                    <div class="p2">
-                        <img src="./images/img_brand_about_1_1.jpg" alt="about">
-                    </div>
-                </div>
-            </div>
-            <div class="r_box">
-                <!-- 너비49% -->
-                <div class="text_box">
-                    <h3>HAZZYS MEN / WOMEN</h3>
-                    <p>
-                        브리티시 감성을 간직한 HAZZYS는 세련된 도시 남/녀를 위한
-                        <br>브랜드 입니다. 비즈니스 미팅, 새로운 사람들과 만남, 액티브한 야외
-                        <br>활동 등 도시인의 하루는 다양한 이벤트로 늘 분주합니다.
-                        <br>이런 도시인의 라이프스타일을 잘 이해하는 HAZZYS는 세련된
-                        <br>디테일과 컬러와 최고의 퀄리티를 자랑하고 그들의 하루를 더욱 활기차고
-                        <br>자신감 있게 연출해줍니다.
-                    </p>
-                </div>
-                <img src="./images/img_brand_about_2.jpg" alt="about">
-            </div>
-        </div>
-        <div class="section section2">
-            <div class="l_box">
-                <div class="text_box">
-                    <h3>HAZZYS ACCESSORIES</h3>
-                    <p>
-                        HAZZYS 액세서리는 세련된 도시인을 위한 패션 소품입니다.
-                        <br>핸드백, 지갑, 벨트, 키홀더 등의 다양한 패션 소품들은
-                        <br>세련된 캐주얼 시티룩을 완성합니다.
-                    </p>
-                    <p>
-                        부담스럽지 않은 디자인으로 자연스러운 아름다움을 표현하고,
-                        <br>잉글리쉬 포인터 심볼 플레이를 통한 위트 있는 디테일로
-                        <br>독특한 개성을 연출합니다.
-                    </p>
-                    <p>
-                        HAZZYS 액세서리는 앞선 감각의 패션 소품임을 약속 드립니다.
-                    </p>
-                </div>
-            </div>
-            <div class="r_box">
-                <div class="img_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-
-                    <img src="./images/img_brand_about_3.jpg" alt="about">
-
-                </div>
-            </div>
-        </div>
-        <div class="section section3">
-            <div class="l_box">
-                <div class="img_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-
-                    <img src="./images/img_brand_about_4.jpg" alt="about">
-
-                </div>
-            </div>
-            <div class="r_box">
-                <div class="text_box">
-                    <h3>HAZZYS GOLF</h3>
-                    <p>
-                        편안한 클래식함을 추구하는 HAZZYS 골프,
-                        <br>새롭고 신선한 스타일을 선호하는 젊은 골퍼들을 위한 브랜드 입니다.
-                        <br>비슷비슷한 색감과 지루한 스타일, 천편일률적인 패턴의
-                        골프웨어들과는 다릅니다.
-                    </p>
-                    <p>
-                        HAZZYS 골프는 최상의 컨디션을 유지할 수 있는 패턴을 연구하여
-                        <br>최고의 원단과 소재로 만들어졌고, 패셔너블한 브리티시 스타일을
-                        <br>구현하여 필드뿐 아니라 가벼운 도시 생활에도 잘 어울립니다.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="section section4">
-            <div class="l_box">
-                <div class="text_box">
-                    <h3>HAZZYS MEN SKIN CARE</h3>
-                    <p>
-                        헤지스맨 스킨케어는 빅데이터로 남성들의 리얼한 목소리를 듣고
-                        <br>오늘을 사는 남성 피부의 진정한 고민을 연구하였습니다.
-                        <br>헤지스의 감성을 담아 ‘영국 바버샵’의 리얼 그루밍 비법과
-                        <br>남성 피부만을 위한 ‘잉글리쉬 허브’ 성분을 담은
-                        <br>오직 남자를 위해 만든 세심한 스킨케어.
-                    </p>
-                    <p>
-                        이제, 헤지스맨 스킨케어와 함께 스타일부터 스킨케어까지
-                        <br>완벽한 스타일링을 완성할 시간입니다.
-                    </p>
-                </div>
-            </div>
-            <div class="r_box">
-                <div class="img_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-
-                    <img src="./images/img_brand_about_beauty.jpg" alt="about">
-
-                </div>
-            </div>
-        </div>
-        <h2 class="c_title">BRAND IDENTITY
-        </h2>
-    </div><!--  container1_E-->
-    <div id="banner2"><!-- banner2_S -->
-
-        <h1 class="b1_title">
-            BRITISH
-            <br>URBANITY
-        </h1>
-    </div><!-- banner2_E -->
-    <div id="container2"> <!--  container2_S-->
-
-        <!-- 너비1200/높이1750/가운데 -->
-        <div class="section section5">
-            <div class="l_box">
-                <div class="text_box">
-                    <h3>BRITISH STYLE,
-                        <br>FOR YOUR URBAN LIFE
-                    </h3>
-                    <p>
-                        정통의 가치를 중시하는 브리티시 감성을 바탕으로 도시의
-                        <br>세련됨을 지향하는 스타일, HAZZYS
-                    </p>
-                    <p>
-                        HAZZYS는 클래식한 감성에 모던함을, 독창적 스타일에 실용성을
-                        <br>더합니다. 고급스럽고 감각적이지만, 위트 있는 개성을 잃지 않습니다.
-                        <br>늘 새롭고 흥미로운 활동들로 가득한 메트로폴리탄에서 HAZZYS는 자신만의
-                        <br>스타일로 도시에 활기를 불어 넣습니다.
-                    </p>
-                    <p>
-                        HAZZYS, 어반 라이프의 주인공이 되는 당신을 위한 스타일입니다.
-                    </p>
-                </div>
-            </div>
-            <div class="r_box">
-                <div class="img_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-
-                    <img src="./images/img_brand_about_5.jpg" alt="about">
-
-                </div>
-            </div>
-        </div>
-        <div class="section section6">
-            <div class="l_box">
-                <!-- 너비49% -->
-                <div class="img_box re_box">
-                    <!-- 포지션 부모가 되는 상자 -->
-                    <div class="p1">
-                        <img src="./images/img_brand_about_6.jpg" alt="about">
-                    </div>
-                    <div class="p2">
-                        <img src="./images/img_brand_about_6_1.jpg" alt="about">
-                    </div>
-                    <div class="p3">
-                        <p>
-                            토요일 아침입니다. 여자 친구와 교외에 있는 갤러리에 갑니다.
-                            <br>화창한 날씨에 어울리는 세련된 핏이 기분 좋은 하루를 열어줍니다.
-                            <br>HAZZYS는 누구와 어디에 있건 입은 사람들을 돋보이게 합니다.
-                            <br>HAZZYS는 도시인의 라이프스타일을 참 잘 아는 브랜드입니다.
                         </p>
+                        <form class="input-group">
+                            <input type="email" placeholder="이메일 입력" required>
+                            <button type="submit">구독</button>
+                        </form>
+                        <p class="sub-text">구독하면 개인정보 보호정책에 동의하며 회사로부터 업데이트를 받기로 동의합니다.</p>
+                    </div>
+
+                    <div class="footer-right">
+                        <div class="menu-group">
+                            <h4 class="menu-title">탐색하기</h4>
+                            <ul class="menu-list">
+                                <li> <a href="./sub/sub1.html">더 타이드</a></li>
+                                <li> <a href="./sub/sub2.html">갤러리 & 아카이브</a></li>
+                                <li> <a href="./sub/sub3.html">큐레이티드 샵</a></li>
+                                <li> <a href="./sub/sub4.html">서포트</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-group">
+                            <h4 class="menu-title">팔로우</h4>
+                            <ul class="sns-list">
+                                <li><img src="./img/Facebook.png" alt="FB"> Facebook</li>
+                                <li><img src="./img/Instagram.png" alt="IG"> Instagram</li>
+                                <li><img src="./img/X.png" alt="X"> X</li>
+                                <li><img src="./img/LinkedIn.png" alt="LI"> LinkedIn</li>
+                                <li><img src="./img/Youtube.png" alt="YT"> Youtube</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="r_box">
-                <!-- 너비49% -->
-                <div class="text_box">
-                    <h3>HAZZYS DAY</h3>
-                    <p>
-                        몸과 마음이 여유로운 금요일, 무채색 정장 대신 라인을 잘 살리면서도
-                        <br>활동하기 편한 팬츠를 고릅니다. 동료들과의 브레인스토밍, 클라이언트와의
-                        <br>주간 미팅이 이어지는 바쁜 하루입니다. 주말을 앞둔 저녁, 다른 날보다
-                        <br>조금 일찍 회사를 나옵니다. 관련 업계 지인들과 모던한 와인 바에서 조금은
-                        <br>격식을 차린 모임을 갖습니다.
-                    </p>
+
+                <div class="footer-bottom">
+                    © 2025 RE:FLOAT. All rights reserved.
                 </div>
-                <img src="./images/img_brand_about_7.jpg" alt="about">
             </div>
         </div>
-    </div> <!--  container2_E-->
-    <div id="footer1">
-        <h1 class="footer_logo">
-            <a href="./index.html">
-                <img src="./images/logo2.png" alt="logo2">
-            </a>
-        </h1>
-    </div>
-    <div id="footer2">
-        <p>
-            @ 2018 LF. All Rights Reserved.
-        </p>
     </div>
 </body>
 
